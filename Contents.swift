@@ -97,3 +97,11 @@ print(toDoList)
 
 toDoList.shuffle()
 print(toDoList)
+
+let start = bucketList.firstIndex(of: "Learn Swift")
+
+if let start = start {
+    let end = bucketList.index(start, offsetBy: 2)
+    
+    print(bucketList[end])
+}
