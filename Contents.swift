@@ -105,3 +105,12 @@ if let start = start {
     
     print(bucketList[end])
 }
+
+let names = ["Almasi", "Haris", "Jun", "Kala"]
+//let firstLetters = names.map { $0.first } // return optional values, since .first can be null
+//let firstLetters = names.compactMap { $0.first } // return string values, compact map return non-nil values
+
+//let firstLetters = names.compactMap(\String.first) // key-path example
+let firstLetters = names.compactMap(\.first)
+
+print(firstLetters)
